@@ -108,7 +108,7 @@ This folder contains all experimental results.
 
 Each folder contains:
 - [`Sequential`](results/mergesort/seq/)
-- [`Local parallel`](results/mergesort/spar/)
+- [`Local parallel`](results/mergesort/par/)
 - [`Local MPI`](results/mergesort/mpi_local/)
 - [`MPI on multiple nodes`](results/mergesort/mpi_scale_nodes/)
 
