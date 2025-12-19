@@ -1,0 +1,21 @@
+name: plotting
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.12.12
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+  - jupyter
+  - ipykernel
+  - ipywidgets
+  - notebook
+  - jupyterlab
+  - pillow
+  - requests
+  - pyqt
+  - qt-main

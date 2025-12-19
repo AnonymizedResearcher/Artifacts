@@ -1,0 +1,85 @@
+def merge(arr: matrix<si64>, left: si64, mid: si64, right: si64) -> matrix<si64> {
+    n1 = mid - left + 1;
+    n2 = right - mid;
+    
+    arr1 = fill(0, n1, 1);
+    arr2 = fill(0, n2, 1);
+    
+    // Copy data to temporary vectors
+    if (n1 > 0) {
+        for (i in 0:(n1-1))
+            arr1[i,0] = arr[left + i,0];
+    }
+
+    if (n2 > 0) {
+        for (j in 0:(n2-1))
+            arr2[j,0] = arr[mid + 1 + j,0];
+    }
+    
+    i = 0;    
+    j = 0;    
+    k = left; 
+    
+    while (i < n1 && j < n2) {
+        if (as.scalar(arr1[i,0]) <= as.scalar(arr2[j,0])) {
+            arr[k,0] = arr1[i,0];
+            i = i + 1;
+        } else {
+            arr[k,0] = arr2[j,0];
+            j = j + 1;
+        }
+        k = k + 1;
+    }
+    
+    while (i < n1) {
+        arr[k,0] = arr1[i,0];
+        i = i + 1;
+        k = k + 1;
+    }
+    
+    while (j < n2) {
+        arr[k,0] = arr2[j,0];
+        j = j + 1;
+        k = k + 1;
+    }
+    return arr;
+}
+
+def merge_sort(x: matrix<si64>, n: si64) -> matrix<si64> {
+    currSize = 1;
+    while (currSize < n) {
+        leftStart = 0;
+        while (leftStart < n - 1) {
+            mid = min(leftStart + currSize - 1, n - 1);
+            rightEnd = min(leftStart + 2*currSize - 1, n - 1);
+            x = merge(x, leftStart, mid, rightEnd);
+            leftStart = leftStart + 2 * currSize;
+        }
+        currSize = 2 * currSize;
+    }
+    return x;
+}
+
+N = $n;
+threshold = $p;  // not used as iterative bottom up
+
+start_gen = now();
+arr = fill(0, N, 1);
+for (i in 0:(N-1)) {
+    value = N - i;
+    arr[i,0] = fill(value,1,1);
+}
+
+start_compute = now();
+arr_sorted = merge_sort(arr, N);
+end = now();
+
+H = 0;
+for (i in 0:(N-1))
+    H = H + (i * as.scalar(arr_sorted[i,0]));
+c = H / (N * N * N * 1.0);
+
+duration_gen = (end - start_gen) / 1000000000.0;
+duration_compute = (end - start_compute) / 1000000000.0;
+
+print(duration_gen, 0); print(",",0); print(duration_compute, 0); print(",",0); print(c);

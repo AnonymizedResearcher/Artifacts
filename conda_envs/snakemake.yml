@@ -1,0 +1,80 @@
+name: snakemake
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+
+dependencies:
+  # --- Python core ---
+  - python=3.13.5
+  - pip
+  
+  # --- Snakemake ---
+  - snakemake=9.9.0
+  - snakemake-minimal=9.9.0
+  - snakemake-interface-common
+  - snakemake-interface-executor-plugins
+  - snakemake-interface-storage-plugins
+  - snakemake-interface-report-plugins
+  - snakemake-interface-logger-plugins
+
+  # --- Core scientific stack ---
+  - numpy
+  - pandas
+  - scipy
+  - pygments
+  - psutil
+  - requests
+  - pyyaml
+  - python-dateutil
+  - pytz
+  - typing-extensions
+  - traitlets
+
+  # --- Required by Snakemake dependency tree ---
+  - attrs
+  - jinja2
+  - jsonschema
+  - jsonschema-specifications
+  - markupsafe
+  - immutables
+  - docutils
+  - tabulate
+  - plac
+  - pyparsing
+  - humanfriendly
+  - platformdirs
+  - colorama
+  - appdirs
+  - dpath
+  - eido
+  - reretry
+  - urllib3
+  - idna
+  - charset-normalizer
+
+  # --- Optimization solvers (Snakemake uses PuLP / CBC) ---
+  - pulp
+  - coin-or-cbc
+  - coin-or-clp
+  - coin-or-utils
+  - coin-or-osi
+  - coin-or-cgl
+
+  # --- Git / repo tools ---
+  - gitpython
+  - gitdb
+  - smmap
+  - rich
+  - smart_open
+
+  # --- Compression / crypto ---
+  - zstandard
+  - openssl
+
+  # --- CLI quality-of-life ---
+  - pytest
+
+  # --- Install missing pip-only deps if Snakemake pulls any ---
+  - pip:
+      - slack_sdk
