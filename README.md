@@ -4,6 +4,13 @@ The following is a description of artifacts for the paper *"A Comparative Study 
 
 ## Structure of the repository
 
+### [Rebuttal](rebuttal)
+Additional files for rebuttal following reviewers suggestions:
+- Speedup [plot examples](rebuttal/performance) and generator code[`plots.ipynb`](rebuttal/plots.ipynb)  
+- Target architecture [topology](rebuttal/topology.png)
+- [Differences](rebuttal/diff_results.txt) between benchmarks scripts. E.g., added and deleted lines of ```connected_components-seq => connected_components-mpi```
+- LaTeX code for metric results Table III excluding absolut values but including above differences in [`plots.ipynb`](rebuttal/plots.ipynb)  
+
 ### [Conda Environments](conda_envs)
 
 - [`code_metrics.yml`](conda_envs/code_metrics.yml)
