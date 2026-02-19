@@ -1,0 +1,96 @@
+=== connected_components | cpp | seq vs par ===
+MISSING: ../benchmark_scripts/connected_components-seq/cpp/connected_components.cpp or ../benchmark_scripts/connected_components-par/cpp/connected_components.cpp
+
+=== connected_components | cpp | seq vs mpi ===
+123	6	../benchmark_scripts/{connected_components-seq => connected_components-mpi}/cpp/connected_components.cpp
+
+=== connected_components | daph | seq vs par ===
+MISSING: ../benchmark_scripts/connected_components-seq/daph/connected_components.daph or ../benchmark_scripts/connected_components-par/daph/connected_components.daph
+
+=== connected_components | daph | seq vs mpi ===
+MISSING: ../benchmark_scripts/connected_components-seq/daph/connected_components.daph or ../benchmark_scripts/connected_components-mpi/daph/connected_components.daph
+
+=== connected_components | jl | seq vs par ===
+MISSING: ../benchmark_scripts/connected_components-seq/jl/connected_components.jl or ../benchmark_scripts/connected_components-par/jl/connected_components.jl
+
+=== connected_components | jl | seq vs mpi ===
+103	44	../benchmark_scripts/{connected_components-seq => connected_components-mpi}/jl/connected_components.jl
+
+=== connected_components | py | seq vs par ===
+MISSING: ../benchmark_scripts/connected_components-seq/py/connected_components.py or ../benchmark_scripts/connected_components-par/py/connected_components.py
+
+=== connected_components | py | seq vs mpi ===
+126	9	../benchmark_scripts/{connected_components-seq => connected_components-mpi}/py/connected_components.py
+
+=== mergesort | cpp | seq vs par ===
+39	7	../benchmark_scripts/{mergesort-seq => mergesort-par}/cpp/mergesort.cpp
+
+=== mergesort | cpp | seq vs mpi ===
+149	30	../benchmark_scripts/{mergesort-seq => mergesort-mpi}/cpp/mergesort.cpp
+
+=== mergesort | daph | seq vs par ===
+MISSING: ../benchmark_scripts/mergesort-seq/daph/mergesort.daph or ../benchmark_scripts/mergesort-par/daph/mergesort.daph
+
+=== mergesort | daph | seq vs mpi ===
+MISSING: ../benchmark_scripts/mergesort-seq/daph/mergesort.daph or ../benchmark_scripts/mergesort-mpi/daph/mergesort.daph
+
+=== mergesort | jl | seq vs par ===
+39	5	../benchmark_scripts/{mergesort-seq => mergesort-par}/jl/mergesort.jl
+
+=== mergesort | jl | seq vs mpi ===
+98	20	../benchmark_scripts/{mergesort-seq => mergesort-mpi}/jl/mergesort.jl
+
+=== mergesort | py | seq vs par ===
+38	5	../benchmark_scripts/{mergesort-seq => mergesort-par}/py/mergesort.py
+
+=== mergesort | py | seq vs mpi ===
+95	23	../benchmark_scripts/{mergesort-seq => mergesort-mpi}/py/mergesort.py
+
+=== nbody | cpp | seq vs par ===
+13	4	../benchmark_scripts/{nbody-seq => nbody-par}/cpp/nbody.cpp
+
+=== nbody | cpp | seq vs mpi ===
+99	38	../benchmark_scripts/{nbody-seq => nbody-mpi}/cpp/nbody.cpp
+
+=== nbody | daph | seq vs par ===
+MISSING: ../benchmark_scripts/nbody-seq/daph/nbody.daph or ../benchmark_scripts/nbody-par/daph/nbody.daph
+
+=== nbody | daph | seq vs mpi ===
+MISSING: ../benchmark_scripts/nbody-seq/daph/nbody.daph or ../benchmark_scripts/nbody-mpi/daph/nbody.daph
+
+=== nbody | jl | seq vs par ===
+13	4	../benchmark_scripts/{nbody-seq => nbody-par}/jl/nbody.jl
+
+=== nbody | jl | seq vs mpi ===
+52	13	../benchmark_scripts/{nbody-seq => nbody-mpi}/jl/nbody.jl
+
+=== nbody | py | seq vs par ===
+34	11	../benchmark_scripts/{nbody-seq => nbody-par}/py/nbody.py
+
+=== nbody | py | seq vs mpi ===
+93	16	../benchmark_scripts/{nbody-seq => nbody-mpi}/py/nbody.py
+
+=== pi_approx | cpp | seq vs par ===
+27	7	../benchmark_scripts/{pi_approx-seq => pi_approx-par}/cpp/pi_approx.cpp
+
+=== pi_approx | cpp | seq vs mpi ===
+42	9	../benchmark_scripts/{pi_approx-seq => pi_approx-mpi}/cpp/pi_approx.cpp
+
+=== pi_approx | daph | seq vs par ===
+MISSING: ../benchmark_scripts/pi_approx-seq/daph/pi_approx.daph or ../benchmark_scripts/pi_approx-par/daph/pi_approx.daph
+
+=== pi_approx | daph | seq vs mpi ===
+MISSING: ../benchmark_scripts/pi_approx-seq/daph/pi_approx.daph or ../benchmark_scripts/pi_approx-mpi/daph/pi_approx.daph
+
+=== pi_approx | jl | seq vs par ===
+31	10	../benchmark_scripts/{pi_approx-seq => pi_approx-par}/jl/pi_approx.jl
+
+=== pi_approx | jl | seq vs mpi ===
+40	10	../benchmark_scripts/{pi_approx-seq => pi_approx-mpi}/jl/pi_approx.jl
+
+=== pi_approx | py | seq vs par ===
+33	11	../benchmark_scripts/{pi_approx-seq => pi_approx-par}/py/pi_approx.py
+
+=== pi_approx | py | seq vs mpi ===
+36	10	../benchmark_scripts/{pi_approx-seq => pi_approx-mpi}/py/pi_approx.py
+
