@@ -18,6 +18,11 @@ Additional files for rebuttal following reviewers suggestions:
   ```MISSING``` denotes combinations where no corresponding version exists.  
 - Revised [Table-III](rebuttal/Table-III.png) (only normailzed values but including diff-based code deltas) together with the LaTeX code generator [`script`](rebuttal/plots.ipynb).  
   ![](rebuttal/Table-III.png)
+- Execution and affinity configuration clarification
+  - Experiments were executed on exclusive nodes allocated via the cluster scheduler (Slurm).
+  - No manual affinity or NUMA binding was specified in the application code.
+  - MPI and OpenMP thread placement therefore followed the default binding policies of the cluster environment and the Open MPI runtime.
+  - Compiler and MPI versions are documented in Table II of the paper.
 
 ### [Conda Environments](conda_envs)
 
