@@ -5,11 +5,19 @@ The following is a description of artifacts for the paper *"A Comparative Study 
 ## Structure of the repository
 
 ### [Rebuttal](rebuttal)
-Additional files for rebuttal following reviewers suggestions:
+Additional files for rebuttal following reviewers suggestions:  
 - Speedup [plot examples](rebuttal/performance) and generator code[`plots.ipynb`](rebuttal/plots.ipynb)  
-- Target architecture [topology](rebuttal/topology.png)
-- [Differences](rebuttal/diff_results.txt) between benchmarks scripts. E.g., added and deleted lines of ```connected_components-seq => connected_components-mpi```
-- LaTeX code for metric results Table III excluding absolut values but including above differences in [`plots.ipynb`](rebuttal/plots.ipynb)  
+  Below is a representative speedup plot illustrating the normalized view (Speedup = 1 baseline indicated by dashed line).  
+  ![Example Speedup Plot](rebuttal/performance/A_nbody.png)
+- Hardware [topology](rebuttal/topology.png) diagram (generated with ```lstopo```) of a typical compute node (AMD EPYC 7H12 64-Core Processor) on Vega.  
+- [Differences](rebuttal/diff_results.txt) between benchmarks scripts.  
+  Reading example:  
+  ```=== mergesort | jl | seq vs par ===```  
+  ```39	5	../benchmark_scripts/{mergesort-seq => mergesort-par}/jl/mergesort.jl```  
+  Changing the **Julia** implementation for **Merge Sort** from **sequential** (_Sep_) to **local parallel** (_Par_) version required adding **39** lines and removing **5** lines.  
+  ```MISSING``` denotes combinations where no corresponding version exists.  
+- Revised [Table-III](rebuttal/Table-III.png) (only normailzed values but including diff-based code deltas) together with the LaTeX code generator [`script`](rebuttal/plots.ipynb).  
+  ![](rebuttal/Table-III.png)
 
 ### [Conda Environments](conda_envs)
 
